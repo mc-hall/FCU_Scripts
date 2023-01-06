@@ -45,7 +45,7 @@ class TheClass():
     def IMGFILE_MOVE(imagefile):
         """Look for the zip folder and move to previous days' production folder on a specific day"""
         for f in os.listdir(chksrc):
-                if f.startswith("987654321") and f.endswith(".zip"):
+                if f.startswith("123456789") and f.endswith(".zip"):
                     print('Moving ', f)
                     date1 = "Monday"
                     if today == date1: #If today = monday: If today is monday, look for 3 days ago prod folder (friday)
@@ -66,7 +66,7 @@ class TheClass():
         password = 'my_email_pw'
         smtpsrv = 'email.service.com'
         body = '\n\n Could not download nascorp files \n'
-        message = 'Subject: Wescorp File download failure'.format()
+        message = 'Subject: corp File download failure'.format()
         header = "To: "+ receiver +" \n " #+ " From: " + sender
         msg = header +'\n'+ message +'\n'+ body
         smtpserver = smtplib.SMTP(smtpsrv,587)
